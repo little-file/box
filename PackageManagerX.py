@@ -56,8 +56,7 @@ def fedora():
     [2]dnf install
     [3]dnf remove
     [4]dnf search
-    [5]reboot
-    [6]quit
+    [5]quit
     """)
         z = int(input("please number enter: "))
         if z== 1:
@@ -69,8 +68,6 @@ def fedora():
         elif z == 4:
             dnfsearch()
         elif z == 5:
-            os.system("reboot")
-        elif z == 6:
             x = False
 def arch():
 
@@ -128,8 +125,7 @@ def arch():
     [2]pacman install
     [3]pacman remove
     [4]pacman search
-    [5]reboot
-    [6]quit
+    [5]quit
     """)
         z = int(input("please number enter: "))
         if z== 1:
@@ -141,8 +137,6 @@ def arch():
         elif z == 4:
             pacmansearch()
         elif z == 5:
-            os.system("reboot")
-        elif z == 6:
             x = False
 def flatpak():
 
@@ -192,8 +186,7 @@ def flatpak():
     [2]flatpak install apps
     [3]flatpak remove apps
     [4]flatpak search apps
-    [5]reboot
-    [6]quit
+    [5]quit
     """)
         z = int(input("please number enter: "))
         if z== 1:
@@ -204,9 +197,7 @@ def flatpak():
              flatpakremove()
         if z == 4:
             flatpaksearch()
-        if z == 5:
-            os.system("reboot")
-        if z == 6:
+        elif z == 5:
             x = False
 
 while True:
@@ -226,6 +217,6 @@ while True:
         arch()
         break
     elif c == 4:
-        break
+        exit()
     else:
         print('false enter')

@@ -1,7 +1,8 @@
 import os
 print("""
 [1] dns (only for linux)
-[2] back
+[2] PackageManagerX
+[3] exit
 """)
 while True:
     
@@ -18,8 +19,13 @@ while True:
     
     elif c == 2:
     
-        break
+        import PackageManagerX
+
+        continue
+    elif c == 3:
     
+        exit()
+
     else:
     
         print("flase enter")

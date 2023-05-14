@@ -1,13 +1,14 @@
-# box
-***`Aim very apps combine.`*** 
 
-# **`How to run`**
+# box
+***Aim very apps combine.*** 
+
+# **How to run**
 
 To run the application, execute the following command:  
 
 >run.sh or python main.py 
 
-# **`Prerequisites`**
+# **Prerequisites**
 
 Make sure you have the following prerequisites installed on your system
 

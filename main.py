@@ -6,7 +6,7 @@ while True:
     print("""
     [1] Games
     [2] Scripts
-    [3] PackageManagerX
+    [3] Password-ganerade
     [5] funny
     [4] Quit""")
     
@@ -24,7 +24,7 @@ while True:
 
     elif x == 3:
 
-        import PackageManagerX
+        import password_ganerade
 
         continue
 
