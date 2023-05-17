@@ -90,7 +90,7 @@ def arch():
       
             if z == "y":
                 c = input("App name: ")
-                os.system("sudo pacman -S --noconfirm"+ c)
+                os.system("sudo pacman -S --noconfirm "+ c)
                 print("done")
                 x = False
 
