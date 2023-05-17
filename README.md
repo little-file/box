@@ -16,6 +16,6 @@ Make sure you have the following prerequisites installed on your system
 
 **- python3.6 or newer version**
 
-**-gnome-termianl(optional)**
+**-gnome-termianl(optional[Required for run.sh file])**
 
 Please ensure that you have met these requirements before running the application.
