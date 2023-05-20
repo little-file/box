@@ -105,7 +105,15 @@ def arch():
                 os.system("sudo pacman -Rs "+ c)
                 print("done")
                 x = False
-
+    def pacmancu():
+        while True:
+            c = input("accept(y) or refuse(n) enter: ")
+            if c == 'y':
+                os.system("sudo pacman -Sy")
+            elif c == 'n':
+                break
+            else:
+                print("False input")
     def pacmansearch(x = True):
         while x == True:
             z = input("y/n: ")
@@ -121,11 +129,12 @@ def arch():
     x = True
 
     while x == True:
-        print("""    [1]pacman update 
-    [2]pacman install
-    [3]pacman remove
-    [4]pacman search
-    [5]quit
+        print("""    [1] update 
+    [2] install
+    [3] remove
+    [4] search
+    [5] check update
+    [6] quit
     """)
         z = int(input("please number enter: "))
         if z== 1:
@@ -137,6 +146,8 @@ def arch():
         elif z == 4:
             pacmansearch()
         elif z == 5:
+            pacmancu()
+        elif z == 6:
             x = False
 def flatpak():
 
@@ -200,23 +211,56 @@ def flatpak():
         elif z == 5:
             x = False
 
+def ubuntu():
+    def usearch():
+        while True:
+            c = input("app name:")
+            os.system("apt search {}".format(c))
+    def uinstall():
+        while True:
+            c = input("app name")
+            os.system("sudo apt install -y {}".format(c))
+    def uupdate():
+        while True:
+            c = input("app name")
+            os.system("sudo apt update -y " + c)
+    while True:
+        print("""
+        [1] install
+        [2] update
+        [3] search
+        [4] exit""")
+        c = int(input("Nuber enter: "))
+        if c == 1 :
+            uinstall()
+        elif c == 2 :
+            uupdate()
+        elif c == 3:
+            usearch()
+        elif c == 4:
+            exit()
+        else:
+            print('false enter')
 while True:
     print("""
     [1] flatpak
-    [2] fedora
-    [3] arch
-    [4] exit
+    [2] arch
+    [3] fedora
+    [4] ubuntu
+    [5] exit
     """)
     c = int(input("Nuber enter: "))
     if c == 1:
         flatpak()
-    elif c == 2 :
+    elif c == 3 :
         fedora()
         break
-    elif c == 3 :
+    elif c == 2 :
         arch()
         break
     elif c == 4:
+        ubuntu()
+    elif c == 5:
         exit()
     else:
         print('false enter')
