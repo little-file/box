@@ -1,1 +1,1 @@
-git pull origin noenv
+git pull origin main
