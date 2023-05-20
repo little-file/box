@@ -1,6 +1,6 @@
 #I.version
 #test version 1x0
-
+import os
 while True:
 
     print("""
@@ -35,7 +35,8 @@ while True:
         I. https://www.chess.com/analysis/game/computer/47503297?tab=analysis
         II.https://www.chess.com/analysis/game/live/71852224971?tab=analysis
         """)
-    
+    elif x == 6:
+        os.system("sh sync.py")
     elif x == 4:
     
         break
