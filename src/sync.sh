@@ -1,1 +1,1 @@
-git pull origin noenv
+cd .. && git pull origin noenv
