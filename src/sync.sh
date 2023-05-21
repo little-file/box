@@ -1,1 +1,2 @@
-git pull origin main
+#!/bin/sh
+cd .. && git pull origin main
