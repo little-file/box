@@ -1,6 +1,6 @@
 #I.version
-#test version 1x0
-import os
+#test version 1x2
+import os 
 while True:
 
     print("""
@@ -8,7 +8,9 @@ while True:
     [2] Scripts
     [3] Password-ganerade
     [5] funny
-    [4] Quit""")
+    [4] Quit
+    [6] sync
+    """)
     
     x  = int(input("Number enter: "))
     
@@ -36,7 +38,7 @@ while True:
         II.https://www.chess.com/analysis/game/live/71852224971?tab=analysis
         """)
     elif x == 6:
-        os.system("sh sync.py")
+        os.system("sh sync.sh")
     elif x == 4:
     
         break
