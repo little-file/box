@@ -1,2 +1,2 @@
 #!/bin/sh
-python src/main.py
+cd src && python main.py
